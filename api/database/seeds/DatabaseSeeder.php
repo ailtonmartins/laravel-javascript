@@ -11,6 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(GruposSeed::class);
+         $this->call([
+                       GruposSeed::class,
+                       ContinentesSeed::class,
+                     ]);
     }
 }

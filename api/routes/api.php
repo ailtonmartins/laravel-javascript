@@ -7,5 +7,5 @@ Route::get('/', function (Request $request) {
 });
 
 Route::resource('grupos', 'GruposController');
-//Route::resource('continentes', 'ContinentesController');
+Route::resource('continentes', 'ContinentesController');
 //Route::resource('times', 'TimesController');
