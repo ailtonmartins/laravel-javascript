@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Times Da Copa</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Times da Copa</h1>
+    </header>
+    <main>
+
+        <section id="form">
+            <strong id="formTilte" >Salvar Time</strong>
+            <form onsubmit="salvar(); return false;">
+                <input type="text" required class="form-control" id="nome" placeholder="Nome:">
+
+                <select class="form-control" placeholder="Continente:"  id="continente" required ></select>
+                <select class="form-control" placeholder="Grupo:" id="grupo" required ></select>
+                <input type="hidden" id="id" value="" />
+
+                <button id="btn-salvar" type="submit" class="btn">Salvar</button>
+                <button id="novo-salvar" type="button" onclick="clearForm()" class="btn">Novo</button>
+                <span id="loading-salvar">Salvando...</span>
+            </form>
+            <div id="error"></div>
+        </section>
+
+        <section>
+            <h2>Grupos</h2>
+            <div id="block-grupos" >
+
+            </div>
+        </section>
+    </main>
+    
+    
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
